@@ -1,0 +1,223 @@
+@import url('https://fonts.googleapis.com/css2?family=Courier+Prime&family=Inder&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing:  border-box;
+    text-decoration: none;
+}
+body {
+    font-size: 100%;
+    background-color: white;
+}
+
+.m-paginaprincipal {
+    background: rgb(11,10,11);
+    background: linear-gradient(23deg, rgba(11,10,11,1) 0%, rgba(86,42,85,1) 69%, rgba(163,68,163,1) 100%);
+    font-size: 100%;
+    height: 100vh;
+}
+
+header {
+    height: 70px;
+    width: 100%;
+}
+
+.m-logo-linkedin {
+    width: 50px;
+    float: right;
+    margin: 8px 15px;
+}
+
+.m-container {
+    border-top: solid 3px rgba(248, 211, 242, 0.73);
+}
+
+.main {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    margin-top: 81px;
+}
+
+article {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 150px;
+    margin-right: 250px;
+    gap: 15px;
+    padding-top: 10px;
+    position: relative;
+}
+
+.m-imagem-principal {
+   width: 350px;
+   height: 350px;
+   margin-right: 250px;
+   margin-top: 25px;
+   position: relative;
+}
+
+
+
+.m-titulo, .m-detalhe-titulo {
+    font-family: 'Courier Prime', monospace;
+    color: white;
+    font-size: 3rem;
+}
+
+.m-detalhe-titulo {
+    color: rgba(154, 95, 138, 0.99);
+}
+
+.m-descricao {
+    color: white;
+    font-size: 1rem;
+    gap: 12px;
+    font-family: 'Inder', sans-serif;
+    overflow-x: hidden;
+}
+
+.m-wrapper {
+    display: flex;
+    height: 100vh;
+    background-color: white;
+    margin: 0%;
+}
+
+.m-right-column {
+    width: 100px;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 0;
+    padding-right: 0;
+}
+
+.navigator {
+    height: 80vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    position: absolute;
+    padding-right: 0;
+}
+
+.navigator ul li {
+    list-style: none;
+    margin: 40px 0;
+    margin-right: 50px;
+}
+
+.navigator ul li a:hover,
+.navigator ul li a.active {
+    background-color: white;
+    color: rgb(247, 144, 224);
+}
+
+.navigator ul li:first-child {
+    margin-top: 0;
+}
+
+.navigator ul li:last-child {
+    margin-bottom: 0;
+}
+
+.navigator ul li a {
+    color: white;
+    border: solid 2px rgba(154, 95, 138, 0.99);
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    background-color: rgba(154, 95, 138);
+    font-family: 'Inder', sans-serif;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 2px;
+}
+
+.navigator::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    width: 2px;
+    height: 100%;
+    background-color: rgba(154, 95, 138);
+    z-index: 0;
+    margin-right: 49px;
+}
+
+.navigator ul{
+    z-index: 1;
+}
+
+a.link {
+    color: rgb(109, 108, 108);
+    font-size: 0.6rem;
+}
+
+.m-slide {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+    position: inherit;
+    padding: 150px 150px;
+    width: 100%;
+  
+}
+
+
+.m-slide-texto {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    background-color: rgba(154, 134, 153, 0.23);
+    border-radius: 25px;
+    position: relative;
+    padding: 10px;
+    width: 450px;
+    height: 350px;
+}
+
+.m-img {
+    width: 350px;
+    border-radius: 25px;
+}
+
+.m-titulo-secundario {
+    font-family: 'Courier Prime', monospace;
+    font-size: 3rem;
+    color: rgba(154, 95, 138, 0.99);
+}
+
+.m-biografia {
+    color: black;
+    font-size: 1.20rem;
+    gap: 20px;
+    font-family: 'Inder', sans-serif;
+    font-weight: 150;
+}
+
+.m-rodape{
+    padding-top: 4px 0px 4px 0px;
+    background-color: white;
+    background-color: rgba(231, 159, 231, 0.699);
+    display: flex;
+    width: 100%;
+    height: 70px;
+    position: absolute;
+    margin-top: 200px;
+}
+
+.m-referencia {
+    margin-right: 500px;
+}

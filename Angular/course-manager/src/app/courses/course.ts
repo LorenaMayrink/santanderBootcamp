@@ -1,11 +1,11 @@
 export class Course {
-    id: number | undefined;
+    id: number = 1;
     name: string = 'L';
-    imageUrl: string | undefined;
-    price: number | undefined;
-    code: string | undefined;
-    duration: number | undefined;
+    imageUrl: string = 'L';
+    price: number = 1;
+    code: string = 'L';
+    duration: number = 1;
     rating: number = 1;
-    releaseDate: string | undefined;
-    description: string | undefined
+    releaseDate: string = 'L';
+    description: string = 'L'
 }

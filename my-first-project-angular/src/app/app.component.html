@@ -21,11 +21,7 @@
   <li class="list-grup-item" *ngSwitchDefault="7" >É igual o Default</li>
 </ul>
 
-<ul class="list-group mx-auto col-3">
-  <li *ngFor="let pessoa of pessoas" class="list-grup-item" >
-    O nome da pessoa é {{ pessoa.nome }} {{ pessoa.sobrenome }}
-  </li>
-</ul>
+<app-list-people></app-list-people>
 
 <h3 appMarcaTexto corDeFundo="blue"> {{ nome }} </h3>
 <button class="btn btn-success" (click)="clicou ()">Cliquei</button>
@@ -33,4 +29,15 @@
 <div class="col-4 mx-auto">
   <input type="text" class="form-control" placeholder="Digite algo" [(ngModel)]="text">
   <h4>Saída: {{ text }}</h4>
+</div>
+
+
+
+<div class="container my-5">
+  <div class="row d-flex align-items-center justify-content-center">
+    <h2>Lista de personagen Rick and Morty</h2>
+    <div class="col-12">
+      <app-list-api></app-list-api>
+    </div>
+  </div>
 </div>

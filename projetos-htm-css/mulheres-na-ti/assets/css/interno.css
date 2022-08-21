@@ -165,3 +165,118 @@ a.link {
     color: rgb(109, 108, 108);
     font-size: 0.6rem;
 }
+
+@media(max-width: 1030px) {
+
+     .m-wrapper {
+        width: 100vw;
+        height: 100vh;
+     }
+     .m-slide {
+        width: 88vw;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2vh 0;
+        position: absolute;
+        gap: 7vw;
+     }
+     h2.m-titulo-secundario {
+        font-size: 1rem;
+     }
+     p.m-biografia{
+        font-size: 0.8rem;
+     }
+     .m-right-column {
+        width: 4vw;
+     }
+     
+     .m-slide-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(154, 134, 153, 0.23);
+        border-radius: 25px;
+        position: relative;
+        width: 45vh;
+        height: 35vh;
+    }
+    .m-img {
+        width: 200px;
+        
+    }
+    .m-rodape{
+        padding-top: 0;
+        background-color: rgba(231, 159, 231, 0.699);
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        margin-top: 100vh;
+        margin-bottom: 0px;
+    }
+    .m-referencia {
+        margin-right: 0px;
+    }
+    .navigator ul li {
+        margin: 20px 0;
+        margin-right: 9vw;
+    }
+    .navigator::before {
+        top: 5rem;
+        width: 2px;
+        height: 70%;
+        margin-right: 9vw;
+    }
+    .m-right-column {
+        width: 5vw;
+    }
+    .navigator ul li a {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+}
+@media(max-width: 450px){
+    .m-slide-texto{
+        width: 40vh;
+        height: 35vh;
+    }
+    h2.m-titulo-secundario {
+        font-size: 1.2rem;
+     }
+     p.m-biografia{
+        font-size: 0.7rem;
+}
+}
+@media(max-width: 360px){
+
+    
+    h2.m-titulo-secundario {
+        font-size: 1rem;
+     }
+     p.m-biografia{
+        font-size: 0.7rem;
+}
+    .m-imagem-principal {
+        width: 170px;
+        height: 170px;
+        margin-left: 10vw;
+        
+    }
+   
+.navigator ul li a {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+.navigator {
+    margin-top: 80vw;
+}
+.m-img {
+    width: 160px;
+    border-radius: 25px;
+}
+} 

@@ -6,12 +6,15 @@
     box-sizing:  border-box;
     text-decoration: none;
 }
+
+
 body {
     font-size: 100%;
     background-color: white;
 }
 
 .m-paginaprincipal {
+    width: 100%;
     background: rgb(11,10,11);
     background: linear-gradient(23deg, rgba(11,10,11,1) 0%, rgba(86,42,85,1) 69%, rgba(163,68,163,1) 100%);
     font-size: 100%;
@@ -19,7 +22,7 @@ body {
 }
 
 header {
-    height: 70px;
+    height: 10vh;
     width: 100%;
 }
 
@@ -29,35 +32,32 @@ header {
     margin: 8px 15px;
 }
 
-.m-container {
-    border-top: solid 3px rgba(248, 211, 242, 0.73);
-}
+
 
 .main {
     display: flex;
     flex-direction: row;
     align-items: center;
     justify-content: space-around;
-    margin-top: 81px;
+    border-top: solid 3px rgba(248, 211, 242, 0.73);
+    justify-content: space-around;
 }
 
 article {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    margin-left: 150px;
-    margin-right: 250px;
+    margin-left: 15vw;
+    margin-right: 25vw;
     gap: 15px;
-    padding-top: 10px;
-    position: relative;
+    margin-top: 8vw;
 }
 
 .m-imagem-principal {
-   width: 350px;
-   height: 350px;
-   margin-right: 250px;
-   margin-top: 25px;
-   position: relative;
+   width: 25%;
+   height: 25%;
+   margin-right: 15vw;
+   margin-top: 8vw;
 }
 
 
@@ -65,7 +65,7 @@ article {
 .m-titulo, .m-detalhe-titulo {
     font-family: 'Courier Prime', monospace;
     color: white;
-    font-size: 3rem;
+    font-size: clamp(2rem, 3rem, 4rem)
 }
 
 .m-detalhe-titulo {
@@ -74,7 +74,7 @@ article {
 
 .m-descricao {
     color: white;
-    font-size: 1rem;
+    font-size: clamp(0.7rem, 1rem, 1.3rem);
     gap: 12px;
     font-family: 'Inder', sans-serif;
     overflow-x: hidden;
@@ -111,7 +111,7 @@ article {
 .navigator ul li {
     list-style: none;
     margin: 40px 0;
-    margin-right: 50px;
+    margin-right: 3vw;
 }
 
 .navigator ul li a:hover,
@@ -189,7 +189,7 @@ a.link {
 }
 
 .m-img {
-    width: 350px;
+    width: 30%;
     border-radius: 25px;
 }
 
@@ -201,7 +201,7 @@ a.link {
 
 .m-biografia {
     color: black;
-    font-size: 1.20rem;
+    font-size: 1.2rem;
     gap: 20px;
     font-family: 'Inder', sans-serif;
     font-weight: 150;
@@ -220,4 +220,159 @@ a.link {
 
 .m-referencia {
     margin-right: 500px;
+}
+
+@media(max-width: 1030px) {
+    .m-wrapper-principal {
+        width: 100vw;
+    }
+    body {
+        overflow-x: scroll;
+    }
+    .main {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+    }
+    .article {
+        width: 100%;
+    }
+    .m-titulo, .m-detalhe-titulo {
+        font-family: 'Courier Prime', monospace;
+        color: white;
+        font-size: 2.5rem
+    }
+    .m-detalhe-titulo {
+        color: rgba(154, 95, 138, 0.99);
+    }
+    .m-imagem-principal {
+        width: 200px;
+        height: 200px;
+        margin-right: 15vw;
+        margin-top: 8vw;
+     }
+     .m-wrapper {
+        width: 100vw;
+        height: 100vh;
+     }
+     .m-slide {
+        width: 88vw;
+        display: flex;
+        flex-direction: column;
+        padding: 0;
+        margin: 2vh 0;
+        position: absolute;
+        gap: 7vw;
+     }
+     h2.m-titulo-secundario {
+        font-size: 1rem;
+     }
+     p.m-biografia{
+        font-size: 0.6rem;
+     }
+     .m-right-column {
+        width: 4vw;
+     }
+     
+     .m-slide-texto {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        background-color: rgba(154, 134, 153, 0.23);
+        border-radius: 25px;
+        position: relative;
+        width: 45vh;
+        height: 35vh;
+    }
+    .m-img {
+        width: 200px;
+        
+    }
+    .m-rodape{
+        padding-top: 0;
+        background-color: rgba(231, 159, 231, 0.699);
+        display: flex;
+        width: 100%;
+        height: 10vh;
+        position: absolute;
+        margin-bottom: 0px;
+    }
+    .m-referencia {
+        margin-right: 0px;
+    }
+    .navigator ul li {
+        margin: 20px 0;
+        margin-right: 9vw;
+    }
+    .navigator::before {
+        top: 5rem;
+        width: 2px;
+        height: 70%;
+        margin-right: 9vw;
+    }
+    .m-right-column {
+        width: 5vw;
+    }
+    .navigator ul li a {
+        width: 30px;
+        height: 30px;
+        padding: 2px;
+    }
+
+}
+@media(max-width: 450px){
+    .m-slide-texto{
+        width: 40vh;
+        height: 35vh;
+    }
+    h2.m-titulo-secundario {
+        font-size: 1.2rem;
+     }
+     p.m-biografia{
+        font-size: 0.9rem;
+}
+}
+@media(max-width: 360px){
+    .m-logo-linkedin {
+        width: 40px;
+    }
+    .m-titulo, .m-detalhe-titulo {
+        font-family: 'Courier Prime', monospace;
+        color: white;
+        font-size: 1.5rem
+    }
+    .m-detalhe-titulo {
+        color: rgba(154, 95, 138, 0.99);
+    }
+    .m-descricao {
+        font-size: 0.8rem;
+    }
+    
+    h2.m-titulo-secundario {
+        font-size: 1rem;
+     }
+     p.m-biografia{
+        font-size: 0.7rem;
+}
+    .m-imagem-principal {
+        width: 170px;
+        height: 170px;
+        margin-left: 10vw;
+        
+    }
+   
+.navigator ul li a {
+    width: 30px;
+    height: 30px;
+    padding: 2px;
+}
+.navigator {
+    margin-top: 80vw;
+}
+.m-img {
+    width: 160px;
+    border-radius: 25px;
+}
 }
